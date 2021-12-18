@@ -11,9 +11,27 @@
   ```
 - 여기서 "log-run"은 CLI 명령어가 된다.
 
-## `npmignore`
+## `peerDependencies`
 
-- 배포에서 제외시킬 파일 설정, 예를 들면 패키지 개발에 사용했지만 배포시 필요없는 것들.
+- 호환성 모듈을 지정한다.
+- 배포시 포함되지 않는다. 대신 호환성 모듈이 없으면 경고 메시지 준다.
+
+  ```json
+  "peerDependencies": {
+    "jquery": "1.9.1 - 3",
+    "popper.js": "^1.12.9"
+  }
+  ```
+
+## `engines`
+
+- 패키지 Node 버전을 지정.
+  ```json
+  "engines": {
+    "node": ">=0.10.3 <0.12",
+    "npm" : "~1.0.20"
+  }
+  ```
 
 <br/>
 <br/>
@@ -41,6 +59,15 @@
   ```
 - 위와 같이 404가 뜨는 패키지명이면 출시가능.
 
+## `npm install {패키지디렉터리}`
+
+- 로컬환경에서 테스트한다.
+  ```bash
+  cd examples
+  npm init -y
+  npm install ../../npm-deploy
+  ```
+
 ## `npm publish`
 
 - 배포한다.
@@ -50,3 +77,12 @@
     "prepare": "rm -rf dist && tsc"
   },
   ```
+
+<br/>
+<br/>
+
+# ※ 설정파일
+
+## `npmignore`
+
+- 배포에서 제외시킬 파일 설정, 예를 들면 패키지 개발에 사용했지만 배포시 필요없는 것들.
