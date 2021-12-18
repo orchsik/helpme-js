@@ -78,6 +78,16 @@
   },
   ```
 
+## `npm unpublish`
+
+- 배포 모듈 삭제
+  ```bash
+  # 특정 버전
+  npm unpublish npm-deploy@0.0.1
+  # 모든 버전
+  npm unpublish daleseo-hello-npm -f
+  ```
+
 <br/>
 <br/>
 

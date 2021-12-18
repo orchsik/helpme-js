@@ -1,7 +1,7 @@
 {
-  "name": "npm-deploy",
-  "version": "0.0.2",
-  "description": "npm deploy sample",
+  "name": "helpme-js",
+  "version": "0.0.1",
+  "description": "A js utilities package for node.js",
   "main": "index.js",
   "bin": {
     "log-run": "bin/cli.js"
@@ -10,8 +10,7 @@
     "cli"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "rm -rf dist && tsc"
+    "prepare:test": "rm -rf dist && tsc"
   },
   "keywords": [
     "javascript",
@@ -27,7 +26,5 @@
     "node": ">=12.0.0",
     "npm": ">=6.0.0"
   },
-  "dependencies": {
-    "commander": "^8.3.0"
-  }
+  "dependencies": {}
 }
