@@ -1,3 +1,3 @@
-import HColor from "./colors";
+import HColors from "./colors";
 
-export { HColor };
+export { HColors };
