@@ -1,3 +1,3 @@
-import HColors from "./colors";
+import HColors from './colors';
 
 export { HColors };
