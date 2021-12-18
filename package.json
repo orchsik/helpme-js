@@ -1,6 +1,6 @@
 {
   "name": "helpme-js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A js utilities package for node.js for me",
   "type": "commonjs",
   "main": "dist/index.js",
