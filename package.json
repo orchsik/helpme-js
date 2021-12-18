@@ -13,6 +13,7 @@
     "build:typescript": "tsc",
     "build:babel": "babel lib --out-dir dist --extensions \".js,.jsx,.ts,.tsx\"",
     "prebuild": "rm -rf dist",
+    "prepublishOnly": "npm run build",
     "test": "jest",
     "watch": "jest -o --watch"
   },
