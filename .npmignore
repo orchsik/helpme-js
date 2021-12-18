@@ -2,7 +2,12 @@
 .git*
 .idea
 Makefile
+
 docs/
-examples/
 support/
 test/
+lib/
+
+tsconfig.json
+whatIsNpm.md
+.babelrc

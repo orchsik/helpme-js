@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // 코드를 제공할 브라우저에서 JavaScript 지원 수준을 정의
+    "module": "commonjs", // 우리가 작성할 시스템(lib)이 아니라 TypeScript의 컴파일러가 코드를 출력할 때(dist) 사용할 모듈 시스템
+    "strict": true,
+    "esModuleInterop": true, // ES6 모듈 사양을 준수하여 CommonJS 모듈을 가져올 수 있게 된다. ....export default
+    "forceConsistentCasingInFileNames": true, // 같은 파일에 대한 일관성 참조 여부
+    "typeRoots": ["./@types", "./node_modules/@types"],
+    "allowJs": true,
+    "declaration": true, // 해당하는 .d.ts 파일을 생성합니다.
+    "emitDeclarationOnly": true, // '.d.ts' 선언 파일만 내보냅니다.(소스파일은 babel로~)
+    "isolatedModules": true, // 추가 검사를 수행하여 별도의 컴파일 (예를 들어 트랜스파일된 모듈 혹은 @babel/plugin-transform-typescript) 이 안전한지 확인
+    "outDir": "./dist"
+  },
+  "include": ["./lib"]
+}

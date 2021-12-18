@@ -1,5 +1,13 @@
 # ※ package.json 속성 설명
 
+## `type`
+
+- "module"값을 설정하면 babel이나 기타 설정없이 ES6 modue 사용 가능하지만, 외부 에서 재사용이 불편해지므로
+- "commojs" 설정.
+  ```json
+  "type": "commonjs",
+  ```
+
 ## `bin`
 
 - bin 속성은 실행할 수 있는 패키지를 만들 때 정의한다.
@@ -7,7 +15,7 @@
   ```json
   "bin": {
       "log-run": "bin/cli.js"
-    },
+  },
   ```
 - 여기서 "log-run"은 CLI 명령어가 된다.
 
@@ -71,11 +79,11 @@
 ## `npm publish`
 
 - 배포한다.
-- 빌드 전에 특정 명령어를 실행할 필요가 있다면 아래와 같이 스크립트의 "prepare" 속성 사용.
+- 빌드 전에 특정 명령어를 실행할 필요가 있다면 아래와 같이 스크립트의 "prebuild" 속성 사용.
 - 업로드 전에 특정 명령어를 실행할 필요가 있다면 아래와 같이 스크립트의 "prepublishOnly" 속성 사용.
   ```json
   "scripts": {
-    "prepare": "rm -rf dist && tsc",
+    "prebuild": "rm -rf dist",
     "prepublishOnly": "npm run build"
   },
   ```

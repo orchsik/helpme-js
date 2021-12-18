@@ -1,4 +1,10 @@
 {
-  "presets": ["@babel/env"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      { "modules": "commonjs", "targets": { "node": true } }
+    ],
+    ["@babel/preset-typescript"]
+  ],
   "sourceMaps": "inline"
 }

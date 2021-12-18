@@ -1,15 +1,17 @@
 {
   "name": "helpme-js",
-  "version": "0.0.5",
+  "version": "0.1.2",
   "description": "A js utilities package for node.js",
+  "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "babel-node lib/index.ts",
     "build": "npm run build:typescript && npm run build:babel",
-    "build:typescript": "",
+    "build:B": "npm run build:typescript",
+    "build:typescript": "tsc",
     "build:babel": "babel lib --out-dir dist --extensions \".js,.jsx,.ts,.tsx\"",
-    "prepare:test": "rm -rf dist && tsc",
+    "prebuild": "rm -rf dist",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -31,6 +33,11 @@
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.5",
     "@babel/node": "^7.16.5",
-    "@babel/preset-env": "^7.16.5"
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-typescript": "^7.16.5",
+    "@types/node": "^17.0.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
   }
 }
