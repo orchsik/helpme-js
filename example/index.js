@@ -1,3 +1,3 @@
-const { hello } = require("npm-deploy");
+const { H_colors } = require("helpme-js");
 
-hello();
+console.log(H_colors);

@@ -71,10 +71,12 @@
 ## `npm publish`
 
 - 배포한다.
-- 배포하기 전에 특정 명령어를 실행할 필요가 있다면 아래와 같이 스크립트의 "prepare" 속성 사용.
+- 빌드 전에 특정 명령어를 실행할 필요가 있다면 아래와 같이 스크립트의 "prepare" 속성 사용.
+- 업로드 전에 특정 명령어를 실행할 필요가 있다면 아래와 같이 스크립트의 "prepublishOnly" 속성 사용.
   ```json
   "scripts": {
-    "prepare": "rm -rf dist && tsc"
+    "prepare": "rm -rf dist && tsc",
+    "prepublishOnly": "npm run build"
   },
   ```
 
@@ -93,6 +95,7 @@
 
 # ※ 설정파일
 
-## `npmignore`
+## `.npmignore`
 
 - 배포에서 제외시킬 파일 설정, 예를 들면 패키지 개발에 사용했지만 배포시 필요없는 것들.
+- 개인적으로 빌드 폴더(dist)와 테스트 폴더(test) 제외 시킴.

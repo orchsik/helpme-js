@@ -1,7 +1,3 @@
-const hello = () => {
-  console.log("hello npm");
-};
+import H_colors from "./lib/colors";
 
-module.exports = {
-  hello,
-};
+export { H_colors };
