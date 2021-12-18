@@ -1,4 +1,4 @@
 const { HColors, HMath } = require('helpme-js');
-const { ESTIMATE_TYPE } = require('helpme-js/dist/math');
+const { APPROXIMATE_TYPE } = HMath;
 
-HMath.estimateNumber(12.34, 2, ESTIMATE_TYPE.CEIL);
+HMath.estimateNumber(12.34, 2, APPROXIMATE_TYPE.CEIL);
