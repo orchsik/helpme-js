@@ -1,5 +1,3 @@
-import H_colors from "./colors";
+import HColor from "./colors";
 
-console.log({ H_colors });
-
-export { H_colors };
+export { HColor };

@@ -16,24 +16,24 @@ $ yarn add helpme-js
 
 <br/>
 
-## 🎈 H_colors
+## 🎈 HColor
 
 ### In javascript
 
 ```js
-const { H_colors } = require("helpme-js");
-H_colors.red[0];
-H_colors.red[5];
-H_colors.red[9];
+const { HColor } = require("helpme-js");
+HColor.red[0];
+HColor.red[5];
+HColor.red[9];
 ```
 
 ### In typescript
 
 ```ts
-import { H_colors } from "helpme-js";
-H_colors.red[0];
-H_colors.red[5];
-H_colors.red[9];
+import { HColor } from "helpme-js";
+HColor.red[0];
+HColor.red[5];
+HColor.red[9];
 ```
 
 ### There are the following colors and the colors that change gradually.

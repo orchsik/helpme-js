@@ -1,1 +1,1 @@
-const { H_colors } = require("helpme-js");
+const { HColors } = require("helpme-js");
