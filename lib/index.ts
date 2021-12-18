@@ -1,3 +1,4 @@
 import HColors from './colors';
+import HMath from './math';
 
-export { HColors };
+export { HColors, HMath };
