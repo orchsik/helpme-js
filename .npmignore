@@ -12,3 +12,9 @@ lib/
 tsconfig.json
 whatIsNpm.md
 .babelrc
+
+.vscode
+coverage
+.eslintrc
+.prettierrc.json
+jest.config.ts
